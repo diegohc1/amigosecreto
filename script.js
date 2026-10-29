@@ -6,7 +6,7 @@
 
 const PARTICIPANTS = [
   {
-    name: "Ana",
+    name: "Francis",
     relation: "La que siempre organiza",
     emoji: "🧁",
     color: "#ffe4d9",
@@ -15,7 +15,7 @@ const PARTICIPANTS = [
     avoid: "Adornos que ocupen mucho espacio"
   },
   {
-    name: "Luis",
+    name: "Guisell",
     relation: "El tecnológico",
     emoji: "🎧",
     color: "#dcecf7",
@@ -24,7 +24,7 @@ const PARTICIPANTS = [
     avoid: "Ropa (mejor no arriesgar la talla)"
   },
   {
-    name: "María",
+    name: "Andres",
     relation: "La creativa",
     emoji: "🎨",
     color: "#fbe6a8",
@@ -33,7 +33,43 @@ const PARTICIPANTS = [
     avoid: "Perfumes muy dulces"
   },
   {
-    name: "Carlos",
+    name: "Tamar",
+    relation: "El de buen diente",
+    emoji: "🍫",
+    color: "#dcebd9",
+    description: "Amante de la comida, las películas y los planes tranquilos.",
+    wishes: ["Chocolates", "Kit para preparar algo rico", "Accesorios para películas en casa"],
+    avoid: "Tazas: ya tiene una colección sospechosa"
+  },
+    {
+    name: "Julio",
+    relation: "El de buen diente",
+    emoji: "🍫",
+    color: "#dcebd9",
+    description: "Amante de la comida, las películas y los planes tranquilos.",
+    wishes: ["Chocolates", "Kit para preparar algo rico", "Accesorios para películas en casa"],
+    avoid: "Tazas: ya tiene una colección sospechosa"
+  },
+      {
+    name: "Lisset",
+    relation: "El de buen diente",
+    emoji: "🍫",
+    color: "#dcebd9",
+    description: "Amante de la comida, las películas y los planes tranquilos.",
+    wishes: ["Chocolates", "Kit para preparar algo rico", "Accesorios para películas en casa"],
+    avoid: "Tazas: ya tiene una colección sospechosa"
+  }, 
+    {
+    name: "Diego",
+    relation: "El de buen diente",
+    emoji: "🍫",
+    color: "#dcebd9",
+    description: "Amante de la comida, las películas y los planes tranquilos.",
+    wishes: ["Chocolates", "Kit para preparar algo rico", "Accesorios para películas en casa"],
+    avoid: "Tazas: ya tiene una colección sospechosa"
+  },
+    {
+    name: "Sebas",
     relation: "El de buen diente",
     emoji: "🍫",
     color: "#dcebd9",
@@ -45,11 +81,11 @@ const PARTICIPANTS = [
 
 const EVENT_DETAILS = {
   // Formato: AAAA-MM-DDTHH:MM:SS. Usa la hora local del lugar del evento.
-  dateTime: "2026-12-19T19:00:00",
-  dateLabel: "19 de diciembre de 2026",
+  dateTime: "2026-12-23T19:00:00",
+  dateLabel: "23 de diciembre de 2026",
   timeLabel: "7:00 p. m.",
-  location: "Casa de la tía Rosa",
-  address: "Av. Las Flores 123, Lima (dirección de ejemplo)",
+  location: "donde será",
+  address: "la dirección",
   durationHours: 4
 };
 
