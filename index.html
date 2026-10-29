@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#155c45">
+  <meta name="description" content="Toda la información de nuestro Amigo Secreto familiar: reglas, deseos y fecha del encuentro.">
+  <title>Amigo Secreto Familiar 🎁</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="confetti confetti-one" aria-hidden="true">✦</div>
+  <div class="confetti confetti-two" aria-hidden="true">✧</div>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Amigo Secreto, inicio">
+      <span class="brand-icon" aria-hidden="true">🎁</span>
+      <span>El Amigo Secreto <b>Familiar</b></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="nav" id="mainNav" aria-label="Navegación principal">
+      <a href="#reglas">Las reglas</a>
+      <a href="#deseos">Lista de deseos</a>
+      <a href="#encuentro">El encuentro</a>
+      <a href="#mensajes">Mensajes</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="inicio">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="sparkle">✦</span> EDICIÓN FAMILIAR · 2026</span>
+        <h1>Un regalo.<br>Una sorpresa.<br><span>¡Cero pistas obvias!</span></h1>
+        <p class="hero-lead">Llegó esa época del año en la que todos somos detectives, nadie sabe guardar un secreto y alguien siempre intenta adivinar su regalo.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#deseos">Ver lista de deseos <span aria-hidden="true">↓</span></a>
+          <a class="button button-ghost" href="#reglas">Repasar las reglas</a>
+        </div>
+        <div class="hero-note"><span aria-hidden="true">🕵️</span> Prohibido interrogar a la familia. Bueno… intentarlo, al menos.</div>
+      </div>
+      <div class="hero-art" aria-label="Ilustración decorativa de regalos navideños" role="img">
+        <div class="sunburst"></div>
+        <div class="floating-star star-a">✦</div><div class="floating-star star-b">✧</div>
+        <div class="tag tag-top">¡Sorpresa!</div>
+        <div class="gift gift-large"><span class="gift-ribbon-v"></span><span class="gift-ribbon-h"></span><span class="gift-bow">⌁</span></div>
+        <div class="gift gift-small"><span class="gift-ribbon-v"></span><span class="gift-ribbon-h"></span></div>
+        <div class="gift gift-round"><span class="gift-ribbon-v"></span><span class="gift-ribbon-h"></span></div>
+        <div class="holly holly-one">🌿</div><div class="holly holly-two">🌟</div>
+        <div class="tag tag-bottom">Con cariño<br>y algo de misterio</div>
+      </div>
+    </section>
+
+    <section class="countdown-section">
+      <div class="section-wrap countdown-inner">
+        <div>
+          <span class="eyebrow eyebrow-light">LA CUENTA REGRESIVA</span>
+          <h2>El gran día se acerca</h2>
+          <p id="countdownMessage">Prepara tu mejor cara de sorpresa.</p>
+        </div>
+        <div class="countdown" id="countdown" aria-label="Cuenta regresiva hasta el encuentro">
+          <div class="time-box"><strong id="days">--</strong><span>días</span></div>
+          <div class="time-box"><strong id="hours">--</strong><span>horas</span></div>
+          <div class="time-box"><strong id="minutes">--</strong><span>minutos</span></div>
+          <div class="time-box"><strong id="seconds">--</strong><span>segundos</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block" id="reglas">
+      <div class="section-heading">
+        <span class="section-kicker">01 / EL CONTRATO FAMILIAR</span>
+        <h2>Las reglas del juego</h2>
+        <p>Son pocas, son sencillas y sí, las vamos a cumplir (eso esperamos).</p>
+      </div>
+      <div class="rules-grid" id="rulesGrid">
+        <article class="rule-card rule-coral"><span class="rule-emoji">💸</span><span class="rule-number">REGLA 01</span><h3>Presupuesto</h3><p>El regalo debe costar entre <b>S/ 50 y S/ 80</b>. La creatividad no tiene límite; la tarjeta de crédito, sí.</p></article>
+        <article class="rule-card rule-yellow"><span class="rule-emoji">🤐</span><span class="rule-number">REGLA 02</span><h3>Secreto, por favor</h3><p>No reveles a quién te tocó. Las indirectas cuentan como sospechosas y los interrogatorios no son válidos.</p></article>
+        <article class="rule-card rule-blue"><span class="rule-emoji">🎁</span><span class="rule-number">REGLA 03</span><h3>Piensa en esa persona</h3><p>Usa la lista de deseos como guía. No todo tiene que ser caro, pero sí pensado con cariño.</p></article>
+        <article class="rule-card rule-green"><span class="rule-emoji">⏰</span><span class="rule-number">REGLA 04</span><h3>Llega a tiempo</h3><p>Ven a la hora acordada. No queremos que el intercambio termine siendo el desayuno del día siguiente.</p></article>
+      </div>
+      <p class="edit-hint">✏️ Puedes cambiar estas reglas directamente en <code>index.html</code>.</p>
+    </section>
+
+    <section class="wishes-section" id="deseos">
+      <div class="section-wrap section-block">
+        <div class="section-heading">
+          <span class="section-kicker">02 / PISTAS AUTORIZADAS</span>
+          <h2>La lista de deseos</h2>
+          <p>Una pequeña ayuda para tu amigo secreto. No es una orden de compra… pero casi.</p>
+        </div>
+        <div class="filter-row">
+          <label class="search-box"><span aria-hidden="true">⌕</span><input type="search" id="wishSearch" placeholder="Buscar a alguien..." aria-label="Buscar participante"></label>
+          <span class="participant-count" id="participantCount">4 participantes</span>
+        </div>
+        <div class="wishes-grid" id="wishesGrid">
+          <!-- Las tarjetas se generan desde PARTICIPANTS en script.js -->
+        </div>
+        <p class="edit-hint">Los nombres y deseos son ejemplos. Edita el arreglo <code>PARTICIPANTS</code> en <code>script.js</code> para poner los datos reales.</p>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block" id="encuentro">
+      <div class="section-heading">
+        <span class="section-kicker">03 / APARTA LA FECHA</span>
+        <h2>Nos vemos para celebrar</h2>
+        <p>Guarda los datos para que nadie pregunte «¿era hoy?» en el grupo familiar.</p>
+      </div>
+      <div class="event-card">
+        <div class="event-illustration" aria-hidden="true">
+          <div class="event-moon">✦</div><div class="event-house">🏡</div><div class="event-gifts">🎁 🎁</div>
+          <div class="event-caption">La reunión del año</div>
+        </div>
+        <div class="event-details">
+          <div class="event-detail"><span class="detail-icon">📅</span><div><span class="detail-label">FECHA</span><strong id="eventDateText">19 de diciembre de 2026</strong></div></div>
+          <div class="event-detail"><span class="detail-icon">🕖</span><div><span class="detail-label">HORA</span><strong id="eventTimeText">7:00 p. m.</strong></div></div>
+          <div class="event-detail"><span class="detail-icon">📍</span><div><span class="detail-label">LUGAR</span><strong id="eventLocationText">Casa de la tía Rosa</strong><p id="eventAddressText">Av. Las Flores 123, Lima (dirección de ejemplo)</p></div></div>
+          <div class="event-detail"><span class="detail-icon">🍰</span><div><span class="detail-label">TRAER</span><strong>Tu regalo y ganas de pasarla bien</strong><p>Si traes postre, ganas puntos extra.</p></div></div>
+          <a class="button button-primary event-button" id="calendarLink" href="#" download="amigo-secreto.ics">＋ Añadir al calendario</a>
+        </div>
+      </div>
+      <p class="edit-hint">Actualiza la fecha, la hora y el lugar en la sección <code>EVENT_DETAILS</code> de <code>script.js</code>.</p>
+    </section>
+
+    <section class="message-section" id="mensajes">
+      <div class="section-wrap message-inner">
+        <div class="message-sticker" aria-hidden="true">💌</div>
+        <span class="section-kicker">04 / MENSAJE OFICIAL (MÁS O MENOS)</span>
+        <h2>Lo importante no es el regalo…</h2>
+        <p class="big-message">…es compartir, reírnos juntos y comprobar quién de la familia tiene el mejor talento para disimular.</p>
+        <p class="message-signoff">Con cariño, el comité organizador que se toma esto muy en serio. <span aria-hidden="true">🎄</span></p>
+        <button class="button button-light" id="newMessageButton" type="button">Dame otra frase <span aria-hidden="true">↻</span></button>
+        <p class="random-message" id="randomMessage" aria-live="polite">«El espíritu navideño es compartir. Las pistas del regalo, no tanto».</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-brand" href="#inicio">🎁 Amigo Secreto Familiar</a>
+    <p>Hecho con cariño, espíritu navideño y un poquito de sospecha.</p>
+    <a href="#inicio" class="back-top">Volver arriba ↑</a>
+  </footer>
+</body>
+</html>
