@@ -109,7 +109,7 @@ function renderParticipants(filter = "") {
     const haystack = [person.name, person.relation, person.description, ...person.wishes, person.avoid]
       .join(" ").toLocaleLowerCase("es");
     return haystack.includes(query);
-  });
+  }); 
 
   $("#participantCount").textContent =
     `${visible.length} ${visible.length === 1 ? "participante" : "participantes"}`;
