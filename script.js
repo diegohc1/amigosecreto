@@ -82,10 +82,10 @@ const PARTICIPANTS = [
 const EVENT_DETAILS = {
   // Formato: AAAA-MM-DDTHH:MM:SS. Usa la hora local del lugar del evento.
   dateTime: "2026-12-23T19:00:00",
-  dateLabel: "23 de diciembre de 2026",
+  dateLabel: "24 de diciembre de 2026",
   timeLabel: "7:00 p. m.",
   location: "donde será",
-  address: "la dirección",
+  address: "The meeting point: Avenida Boulevard",
   durationHours: 4
 };
 
