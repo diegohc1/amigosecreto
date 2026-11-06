@@ -1,261 +1,312 @@
-/*
- * AMIGO SECRETO FAMILIAR
- * Edita PARTICIPANTS y EVENT_DETAILS para personalizar la página.
- * No necesitas modificar el resto del código para cambiar nombres y deseos.
- */
+/* ==================================================
+   AMIGO SECRETO FAMILIAR
+   Datos e interacciones de la página.
+   Los textos editables están agrupados en PARTICIPANTS y TRANSLATIONS.
+   ================================================== */
 
+/* 1. CONFIGURACIÓN: cambia aquí la fecha de la cuenta regresiva.
+   Formato: AAAA-MM-DDTHH:MM:SS (hora local del evento). */
+const EVENT_DATE = "2026-12-23T19:00:00";
+
+/* 2. PARTICIPANTES: edita nombres y tres deseos en los tres idiomas.
+   Para añadir a alguien, copia un bloque completo y cambia sus datos. */
 const PARTICIPANTS = [
-  {
-    name: "Francis",
-    relation: "La que siempre organiza",
-    emoji: "🧁",
-    color: "#ffe4d9",
-    description: "Le gustan los detalles bonitos, el café y las cosas para relajarse.",
-    wishes: ["Taza bonita", "Café especial", "Velas aromáticas"],
-    avoid: "Adornos que ocupen mucho espacio"
-  },
-  {
-    name: "Guisell",
-    relation: "El tecnológico",
-    emoji: "🎧",
-    color: "#dcecf7",
-    description: "Fan de la tecnología, los videojuegos y los accesorios útiles.",
-    wishes: ["Accesorios para escritorio", "Tarjeta de regalo", "Audífonos deportivos"],
-    avoid: "Ropa (mejor no arriesgar la talla)"
-  },
-  {
-    name: "Andres",
-    relation: "La creativa",
-    emoji: "🎨",
-    color: "#fbe6a8",
-    description: "Disfruta leer, dibujar y probar actividades nuevas.",
-    wishes: ["Libros", "Materiales de arte", "Agenda bonita"],
-    avoid: "Perfumes muy dulces"
-  },
-  {
-    name: "Tamar",
-    relation: "El de buen diente",
-    emoji: "🍫",
-    color: "#dcebd9",
-    description: "Amante de la comida, las películas y los planes tranquilos.",
-    wishes: ["Chocolates", "Kit para preparar algo rico", "Accesorios para películas en casa"],
-    avoid: "Tazas: ya tiene una colección sospechosa"
-  },
-    {
-    name: "Julio",
-    relation: "El de buen diente",
-    emoji: "🍫",
-    color: "#dcebd9",
-    description: "Amante de la comida, las películas y los planes tranquilos.",
-    wishes: ["Chocolates", "Kit para preparar algo rico", "Accesorios para películas en casa"],
-    avoid: "Tazas: ya tiene una colección sospechosa"
-  },
-      {
-    name: "Lisset",
-    relation: "El de buen diente",
-    emoji: "🍫",
-    color: "#dcebd9",
-    description: "Amante de la comida, las películas y los planes tranquilos.",
-    wishes: ["Chocolates", "Kit para preparar algo rico", "Accesorios para películas en casa"],
-    avoid: "Tazas: ya tiene una colección sospechosa"
-  }, 
-    {
-    name: "Diego",
-    relation: "El de buen diente",
-    emoji: "🍫",
-    color: "#dcebd9",
-    description: "Amante de la comida, las películas y los planes tranquilos.",
-    wishes: ["Chocolates", "Kit para preparar algo rico", "Accesorios para películas en casa"],
-    avoid: "Tazas: ya tiene una colección sospechosa"
-  },
-    {
-    name: "Sebas",
-    relation: "El de buen diente",
-    emoji: "🍫",
-    color: "#dcebd9",
-    description: "Amante de la comida, las películas y los planes tranquilos.",
-    wishes: ["Chocolates", "Kit para preparar algo rico", "Accesorios para películas en casa"],
-    avoid: "Tazas: ya tiene una colección sospechosa"
-  }
+  { name: "Francis", wishes: {
+    es: ["Opción 1", "Opción 2", "Opción 3"],
+    en: ["Option 1", "Option 2", "Option 3"],
+    ru: ["Вариант 1", "Вариант 2", "Вариант 3"]
+  }},
+  { name: "Guisell", wishes: {
+    es: ["Opción 1", "Opción 2", "Opción 3"],
+    en:  ["Option 1", "Option 2", "Option 3"],
+    ru: ["Вариант 1", "Вариант 2", "Вариант 3"]
+  }},
+  { name: "Andres", wishes: {
+    es: ["Opción 1", "Opción 2", "Opción 3"],
+    en: ["Option 1", "Option 2", "Option 3"],
+    ru: ["Вариант 1", "Вариант 2", "Вариант 3"]
+  }},
+  { name: "Tamar", wishes: {
+    es: ["Opción 1", "Opción 2", "Opción 3"],
+    en: ["Option 1", "Option 2", "Option 3"],
+    ru: ["Вариант 1", "Вариант 2", "Вариант 3"]
+  }},
+  { name: "Julio", wishes: {
+    es: ["Opción 1", "Opción 2", "Opción 3"],
+    en:  ["Option 1", "Option 2", "Option 3"],
+    ru: ["Вариант 1", "Вариант 2", "Вариант 3"]
+  }},
+  { name: "Lisset", wishes: {
+    es: ["Opción 1", "Opción 2", "Opción 3"],
+    en:  ["Option 1", "Option 2", "Option 3"],
+    ru:["Вариант 1", "Вариант 2", "Вариант 3"]
+  }},
+  { name: "Diego", wishes: {
+    es: ["Opción 1", "Opción 2", "Opción 3"],
+    en:  ["Option 1", "Option 2", "Option 3"],
+    ru: ["Вариант 1", "Вариант 2", "Вариант 3"]
+  }},
+  { name: "Sebas", wishes: {
+    es: ["Opción 1", "Opción 2", "Opción 3"],
+    en: ["Option 1", "Option 2", "Option 3"],
+    ru:["Вариант 1", "Вариант 2", "Вариант 3"]
+  }}
 ];
 
-const EVENT_DETAILS = {
-  // Formato: AAAA-MM-DDTHH:MM:SS. Usa la hora local del lugar del evento.
-  dateTime: "2026-12-23T19:00:00",
-  dateLabel: "24 de diciembre de 2026",
-  timeLabel: "7:00 p. m.",
-  location: "donde será",
-  address: "The meeting point: Avenida Boulevard",
-  durationHours: 4
+/* 3. TRADUCCIONES: modifica aquí los textos de la página.
+   Mantén las mismas claves en ES, EN y RU. */
+const TRANSLATIONS = {
+  es: {
+    navRules: "Las reglas", navWishes: "Lista de deseos", navMessages: "Mensajes",
+    eyebrow: "✦ American dentist David Burbank edition",
+    heroTitle1: "Un regalo.", heroTitle2: "Una sorpresa.",
+    heroLead: "Una vez más, la familia se reúne para celebrar la Navidad, intercambiar regalos y fingir que nadie tiene motivos para sospechar del sorteo.",
+    heroButton1: "Ver lista de deseos", heroButton2: "Repasar las reglas",
+    heroNote: "¿Qué es un regalo? ¿Qué es un presente?",
+    artTagTop: "¡Sorpresa!", artTagBottom: "Con cariño<br>y algo de misterio",
+    countdownTitle: "El gran día se acerca...",
+    countdownIntro: "Recuerda: recibirás un regalo y deberás fingir que no lo esperabas.",
+    countdownRunning: "Prepara tu mejor cara de sorpresa.",
+    countdownToday: "¡Llegó el gran día! Que empiece el intercambio 🎁",
+    countdownPast: "El encuentro ya pasó. ¡Que vivan los recuerdos familiares!",
+    days: "días", hours: "horas", minutes: "minutos", seconds: "segundos",
+    rulesTitle: "Las reglas del juego",
+    rulesIntro: "Son pocas, son sencillas y sí, las vamos a cumplir (eso esperamos).",
+    rule1Title: "Presupuesto",
+    rule1Text: "S/ 100 para Perú o US$ 50 para Estados Unidos. La creatividad no tiene límite; la tarjeta de crédito, sí.",
+    rule2Title: "Secreto, por favor",
+    rule2Text: "No reveles a quién te tocó. Las indirectas cuentan como sospechosas y los interrogatorios no son válidos.",
+    rule3Title: "Piensa en esa persona",
+    rule3Text: "Usa la lista de deseos como guía. El verdadero valor del regalo está en el detalle y la intención.",
+    rule4Title: "Llega a tiempo",
+    rule4Text: "Ven a la hora acordada. La puntualidad también es un regalo.",
+    wishesTitle: "La lista de deseos",
+    wishesIntro: "Una pequeña ayuda para tu amigo secreto. No es una orden de compra… pero casi.",
+    messageKicker: "03", messageTitle: "Lo importante no es el regalo…",
+    messageSubtitle: "…es compartir y reírnos juntos",
+    messageSignoff: "El comité desorganizador 🎄",
+    messageButton: "Dame otra frase",
+    footerBrand: "Amigo Secreto Familiar",
+    footerText: "Hecho con cariño y espíritu navideño", backTop: "Volver arriba ↑",
+    phrases: [
+  "«La Navidad une a la familia. El amigo secreto pone a prueba esa unión.»",
+  "«Una pregunta sospechosa siempre empieza con “solo por curiosidad…”.»",
+  "«La creatividad no tiene límite; la tarjeta de crédito, sí.»",
+  "«Actúa con naturalidad. Nadie sospechará de ti. Quizá.»",
+  "«El azar es una cosa maravillosa, especialmente cuando nadie lo cuestiona.»",
+  "«Recuerda: el regalo es secreto. Las sospechas, no tanto.»",
+  "«La transparencia del sorteo está garantizada por el comité que organizó el sorteo.»",
+  "La Coca-Cola tiene una vaina específica que te hace bien.",
+  "El frío no existe.",
+  "¿Estás de luto? Sí, por el mundo puto.",
+  "Mis principios: las 3 Fs.",
+  "El que pide al mundo poco es un loco.",
+  "Los tres personajes del teatro: jeringa, bacín y trapo.",
+  "Si la saludas, la ves."
+]
+  },
+  en: {
+    navRules: "The rules", navWishes: "Wish list", navMessages: "Messages",
+    eyebrow: "✦ American dentist David Burbank edition",
+    heroTitle1: "A gift.", heroTitle2: "A surprise.",
+    heroLead: "Once again, the family gets together to celebrate Christmas, exchange gifts, and pretend nobody has any reason to question the draw.",
+    heroButton1: "See the wish list", heroButton2: "Review the rules",
+    heroNote: "What is a gift? What is a present?",
+    artTagTop: "Surprise!", artTagBottom: "With love<br>and a little mystery",
+    countdownTitle: "The big day is getting closer...",
+    countdownIntro: "Remember: you'll receive a gift and have to pretend you weren't expecting it.",
+    countdownRunning: "Start practicing your surprised face.",
+    countdownToday: "The big day is here! Let the gift exchange begin 🎁",
+    countdownPast: "The gathering is over. Long live family memories!",
+    days: "days", hours: "hours", minutes: "minutes", seconds: "seconds",
+    rulesTitle: "The rules of the game",
+    rulesIntro: "There aren't many, they're simple, and yes, we intend to follow them (hopefully).",
+    rule1Title: "Budget",
+    rule1Text: "S/ 100 in Peru or US$ 50 in the United States. Creativity has no limits; your credit card does.",
+    rule2Title: "Keep it secret",
+    rule2Text: "Don't reveal who you picked. Suspicious hints and interrogations are strictly forbidden.",
+    rule3Title: "Think about that person",
+    rule3Text: "Use the wish list as a guide. A gift's real value is in the thought and intention behind it.",
+    rule4Title: "Be on time",
+    rule4Text: "Please arrive at the agreed time. Punctuality is a gift too.",
+    wishesTitle: "The wish list",
+    wishesIntro: "A little help for your Secret Santa. Not exactly a shopping order… but almost.",
+    messageKicker: "03", messageTitle: "It's not really about the gift…",
+    messageSubtitle: "…it's about being together and having a laugh",
+    messageSignoff: "The disorganizing committee",
+    messageButton: "Give me another line",
+    footerBrand: "Family Secret Santa", footerText: "Made with love and Christmas spirit",
+    backTop: "Back to top ↑",
+    phrases: [
+  "«Christmas brings the family together. Secret Santa puts that bond to the test.»",
+  "«A suspicious question always starts with “just out of curiosity…”.»",
+  "«Creativity has no limits; your credit card does.»",
+  "«Act natural. Nobody will suspect you. Probably.»",
+  "«Chance is a wonderful thing, especially when nobody questions it.»",
+  "«Remember: the gift is secret. The suspicions, not so much.»",
+  "«The transparency of the draw is guaranteed by the committee that organized the draw.»",
+  "Coca-Cola has this one specific thing that's good for you.",
+  "Cold doesn't exist.",
+  "My principles: the three Fs.",
+  "Anyone who asks little of the world is a fool.",
+  "If you say hello to her, you'll see her."
+]
+  },
+  ru: {
+    navRules: "Правила", navWishes: "Список желаний", navMessages: "Послания",
+    eyebrow: "✦ Специальный выпуск: доктор Дэвид Бёрбанк",
+    heroTitle1: "Подарок.", heroTitle2: "Сюрприз.",
+    heroLead: "Снова семья собирается праздновать Рождество, обмениваться подарками и делать вид, что результаты жеребьёвки никого не удивляют.",
+    heroButton1: "Список желаний", heroButton2: "Повторить правила",
+    heroNote: "Что такое подарок? Что такое презент?",
+    artTagTop: "Сюрприз!", artTagBottom: "С любовью<br>и небольшой тайной",
+    countdownTitle: "Большой день приближается...",
+    countdownIntro: "Помни: ты получишь подарок и должен будешь сделать вид, что совсем его не ожидал.",
+    countdownRunning: "Тренируй самое убедительное удивлённое лицо.",
+    countdownToday: "Этот день настал! Да начнётся обмен подарками 🎁",
+    countdownPast: "Встреча закончилась. Да здравствуют семейные воспоминания!",
+    days: "дней", hours: "часов", minutes: "минут", seconds: "секунд",
+    rulesTitle: "Правила игры",
+    rulesIntro: "Правил немного, они простые, и мы, конечно, будем их соблюдать (наверное).",
+    rule1Title: "Бюджет",
+    rule1Text: "100 солей в Перу или 50 долларов США. У творчества нет границ, а у кредитной карты — есть.",
+    rule2Title: "Секретность",
+    rule2Text: "Не раскрывай, кто тебе достался. Намёки подозрительны, допросы запрещены.",
+    rule3Title: "Подумай об этом человеке",
+    rule3Text: "Используй список желаний как подсказку. Настоящая ценность подарка — во внимании и заботе.",
+    rule4Title: "Не опаздывай",
+    rule4Text: "Приходи вовремя. Пунктуальность — тоже подарок.",
+    wishesTitle: "Список желаний",
+    wishesIntro: "Небольшая подсказка для твоего Тайного Санты. Это не приказ к покупке… почти.",
+    messageKicker: "03", messageTitle: "Главное — не подарок…",
+    messageSubtitle: "…а возможность быть вместе и посмеяться",
+    messageSignoff: "Комитет по дезорганизации",
+    messageButton: "Ещё одну фразу",
+    footerBrand: "Семейный Тайный Санта",
+    footerText: "С любовью и рождественским настроением", backTop: "Наверх ↑",
+    phrases: [
+  "«Рождество объединяет семью. Тайный Санта проверяет прочность этой связи.»",
+  "«Подозрительный вопрос всегда начинается со слов: „Просто из любопытства…“»",
+  "«У творчества нет границ, а у кредитной карты — есть.»",
+  "«Веди себя естественно. Никто тебя не заподозрит. Наверное.»",
+  "«Случай — замечательная вещь, особенно когда никто его не ставит под сомнение.»",
+  "«Помни: подарок — секрет. Подозрения — не совсем.»",
+  "«Прозрачность жеребьёвки гарантирована комитетом, который её организовал.»",
+  "В Coca-Cola есть одна особенная штука, которая тебе полезна.",
+  "Холода не существует.",
+  "Мои принципы: три буквы «Ф».",
+  "Кто мало просит от мира, тот дурак.",
+  "Поздоровайся с ней — и увидишь её."
+]
+  }
 };
 
-const FUN_MESSAGES = [
-  "«El espíritu navideño es compartir. Las pistas del regalo, no tanto».",
-  "«Recuerda: una pregunta sospechosa empieza con “solo por curiosidad…”».",
-  "«No importa el tamaño del regalo. Importa el tamaño de la sonrisa (y que venga envuelto)».",
-  "«El mejor regalo es estar juntos. El segundo mejor es que hayan seguido tu lista de deseos».",
-  "«Mantén la calma y actúa con naturalidad. Nadie sospechará de ti. Quizá».",
-  "«Si alguien dice que no necesita nada, revisa la lista de deseos una vez más».",
-  "«Se busca: persona capaz de envolver un regalo sin gastar más cinta que papel».",
-  "«La Navidad es mágica: hace desaparecer el presupuesto en una sola visita a la tienda»."
-];
+/* 4. CAMBIO DE IDIOMA: aplica traducciones y vuelve a dibujar la lista. */
+let currentLanguage = "es";
+let previousPhraseIndex = -1;
 
-const $ = (selector) => document.querySelector(selector);
+function changeLanguage(language) {
+  if (!TRANSLATIONS[language]) return;
+  currentLanguage = language;
+  document.documentElement.lang = language;
 
-function renderParticipants(filter = "") {
-  const grid = $("#wishesGrid");
-  const query = filter.trim().toLocaleLowerCase("es");
-  const visible = PARTICIPANTS.filter(person => {
-    const haystack = [person.name, person.relation, person.description, ...person.wishes, person.avoid]
-      .join(" ").toLocaleLowerCase("es");
-    return haystack.includes(query);
-  }); 
+  document.querySelectorAll("[data-i18n]").forEach(element => {
+    const key = element.dataset.i18n;
+    if (TRANSLATIONS[language][key] !== undefined) element.textContent = TRANSLATIONS[language][key];
+  });
+  document.querySelectorAll("[data-i18n-html]").forEach(element => {
+    const key = element.dataset.i18nHtml;
+    if (TRANSLATIONS[language][key] !== undefined) element.innerHTML = TRANSLATIONS[language][key];
+  });
+  document.querySelectorAll(".language-button").forEach(button => {
+    const active = button.dataset.language === language;
+    button.classList.toggle("active", active);
+    button.setAttribute("aria-pressed", String(active));
+  });
 
-  $("#participantCount").textContent =
-    `${visible.length} ${visible.length === 1 ? "participante" : "participantes"}`;
+  renderParticipants();
+  updateCountdown();
+  showRandomPhrase(true);
+}
 
-  if (!visible.length) {
-    grid.innerHTML = '<div class="no-results">No encontramos a esa persona. Prueba con otro nombre. 🔎</div>';
-    return;
-  }
-
-  grid.innerHTML = visible.map(person => `
-    <article class="wish-card">
-      <div>
-        <h3>${escapeHTML(person.name)}</h3>
-        <ul>
-          ${(person.wishes || []).map(wish => `<li>${escapeHTML(wish)}</li>`).join("")}
-        </ul>
-      </div>
-    </article>
-  `).join("");
-
-// Evita que textos introducidos en los datos se interpreten como HTML.
+/* 5. LISTA DE DESEOS: crea una tarjeta y tres viñetas por persona. */
 function escapeHTML(value) {
   return String(value).replace(/[&<>"']/g, char => ({
     "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
   })[char]);
 }
-function escapeAttribute(value) {
-  return escapeHTML(value).replace(/`/g, "&#96;");
+
+function renderParticipants() {
+  const grid = document.getElementById("wishesGrid");
+  grid.innerHTML = PARTICIPANTS.map(person => {
+    const wishes = person.wishes[currentLanguage] || person.wishes.es;
+    const items = wishes.map(wish => `<li>${escapeHTML(wish)}</li>`).join("");
+    return `<article class="wish-card"><h3>${escapeHTML(person.name)}</h3><ul>${items}</ul></article>`;
+  }).join("");
 }
 
+/* 6. CUENTA REGRESIVA: para cambiar la fecha, edita EVENT_DATE al inicio. */
 function updateCountdown() {
-  const target = new Date(EVENT_DETAILS.dateTime).getTime();
-  const now = Date.now();
-  const distance = target - now;
-  const message = $("#countdownMessage");
+  const target = new Date(EVENT_DATE).getTime();
+  const distance = target - Date.now();
+  const message = document.getElementById("countdownMessage");
 
   if (Number.isNaN(target)) {
-    message.textContent = "Configura la fecha del encuentro en script.js.";
-    ["days", "hours", "minutes", "seconds"].forEach(id => $("#" + id).textContent = "--");
+    message.textContent = "Check the EVENT_DATE setting in script.js.";
     return;
   }
-
   if (distance <= 0) {
-    ["days", "hours", "minutes", "seconds"].forEach(id => $("#" + id).textContent = "0");
-    message.textContent = distance > -24 * 60 * 60 * 1000
-      ? "¡Llegó el gran día! Que empiece el intercambio 🎁"
-      : "El encuentro ya pasó. ¡Que vivan los recuerdos familiares!";
+    ["days", "hours", "minutes", "seconds"].forEach(id => {
+      document.getElementById(id).textContent = "0";
+    });
+    message.textContent = distance > -86400000 ? TRANSLATIONS[currentLanguage].countdownToday : TRANSLATIONS[currentLanguage].countdownPast;
     return;
   }
-
   const seconds = Math.floor(distance / 1000);
-  $("#days").textContent = Math.floor(seconds / 86400);
-  $("#hours").textContent = Math.floor((seconds % 86400) / 3600);
-  $("#minutes").textContent = Math.floor((seconds % 3600) / 60);
-  $("#seconds").textContent = seconds % 60;
-  message.textContent = "Prepara tu mejor cara de sorpresa.";
+  document.getElementById("days").textContent = Math.floor(seconds / 86400);
+  document.getElementById("hours").textContent = Math.floor((seconds % 86400) / 3600);
+  document.getElementById("minutes").textContent = Math.floor((seconds % 3600) / 60);
+  document.getElementById("seconds").textContent = seconds % 60;
+  message.textContent = TRANSLATIONS[currentLanguage].countdownRunning;
 }
 
-function updateEventDetails() {
-  $("#eventDateText").textContent = EVENT_DETAILS.dateLabel;
-  $("#eventTimeText").textContent = EVENT_DETAILS.timeLabel;
-  $("#eventLocationText").textContent = EVENT_DETAILS.location;
-  $("#eventAddressText").textContent = EVENT_DETAILS.address;
-  createCalendarFile();
+/* 7. GENERADOR DE FRASES: las frases se editan en TRANSLATIONS > phrases. */
+function showRandomPhrase(allowSame = false) {
+  const phrases = TRANSLATIONS[currentLanguage].phrases;
+  if (!phrases.length) return;
+  let index = Math.floor(Math.random() * phrases.length);
+  if (!allowSame && phrases.length > 1) {
+    while (index === previousPhraseIndex) index = Math.floor(Math.random() * phrases.length);
+  }
+  previousPhraseIndex = index;
+  document.getElementById("randomMessage").textContent = phrases[index];
 }
 
-function formatICSDate(date) {
-  const pad = n => String(n).padStart(2, "0");
-  return `${date.getFullYear()}${pad(date.getMonth()+1)}${pad(date.getDate())}T${pad(date.getHours())}${pad(date.getMinutes())}00`;
-}
-
-function createCalendarFile() {
-  const start = new Date(EVENT_DETAILS.dateTime);
-  if (Number.isNaN(start.getTime())) return;
-  const end = new Date(start.getTime() + (EVENT_DETAILS.durationHours || 4) * 60 * 60 * 1000);
-  const escapeICS = value => String(value).replace(/\\/g, "\\\\").replace(/,/g, "\\,").replace(/;/g, "\\;").replace(/\n/g, "\\n");
-  const content = [
-    "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Amigo Secreto Familiar//ES",
-    "CALSCALE:GREGORIAN", "BEGIN:VEVENT",
-    `UID:amigo-secreto-${start.getTime()}@familia`,
-    `DTSTAMP:${formatICSDate(new Date())}`,
-    `DTSTART:${formatICSDate(start)}`,
-    `DTEND:${formatICSDate(end)}`,
-    "SUMMARY:Amigo Secreto Familiar 🎁",
-    `LOCATION:${escapeICS(EVENT_DETAILS.location + " - " + EVENT_DETAILS.address)}`,
-    "DESCRIPTION:No olvides tu regalo y tus ganas de pasarla bien.",
-    "END:VEVENT", "END:VCALENDAR"
-  ].join("\r\n");
-  $("#calendarLink").href = URL.createObjectURL(new Blob([content], { type: "text/calendar;charset=utf-8" }));
-}
-
-function setupNavigation() {
-  const toggle = $("#menuToggle");
-  const nav = $("#mainNav");
+/* 8. MENÚ MÓVIL */
+function setupMenu() {
+  const toggle = document.getElementById("menuToggle");
+  const nav = document.getElementById("mainNav");
   toggle.addEventListener("click", () => {
-    const isOpen = nav.classList.toggle("is-open");
-    toggle.setAttribute("aria-expanded", String(isOpen));
-    toggle.setAttribute("aria-label", isOpen ? "Cerrar menú" : "Abrir menú");
-    toggle.textContent = isOpen ? "×" : "☰";
+    const open = nav.classList.toggle("is-open");
+    toggle.setAttribute("aria-expanded", String(open));
+    toggle.textContent = open ? "×" : "☰";
   });
   nav.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
     nav.classList.remove("is-open");
     toggle.setAttribute("aria-expanded", "false");
-    toggle.setAttribute("aria-label", "Abrir menú");
     toggle.textContent = "☰";
   }));
 }
 
-function setupMessages() {
-  const button = $("#newMessageButton");
-  const output = $("#randomMessage");
-  let previous = -1;
-  button.addEventListener("click", () => {
-    let next;
-    do { next = Math.floor(Math.random() * FUN_MESSAGES.length); } while (FUN_MESSAGES.length > 1 && next === previous);
-    previous = next;
-    output.animate([{ opacity: 0, transform: "translateY(6px)" }, { opacity: 1, transform: "translateY(0)" }], { duration: 260, easing: "ease-out" });
-    output.textContent = FUN_MESSAGES[next];
-  });
-}
-
-function setupRevealAnimations() {
-  const targets = document.querySelectorAll(".section-heading, .rule-card, .wish-card, .event-card");
-  targets.forEach(el => el.classList.add("reveal"));
-  if (!("IntersectionObserver" in window)) {
-    targets.forEach(el => el.classList.add("is-visible"));
-    return;
-  }
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("is-visible");
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.12 });
-  targets.forEach(el => observer.observe(el));
-}
-
+/* 9. INICIO: conecta los botones y actualiza la cuenta regresiva. */
 document.addEventListener("DOMContentLoaded", () => {
   renderParticipants();
-  updateEventDetails();
+  document.querySelectorAll(".language-button").forEach(button => {
+    button.addEventListener("click", () => changeLanguage(button.dataset.language));
+  });
+  document.getElementById("newMessageButton").addEventListener("click", () => showRandomPhrase());
+  setupMenu();
   updateCountdown();
   window.setInterval(updateCountdown, 1000);
-  $("#wishSearch").addEventListener("input", event => renderParticipants(event.target.value));
-  setupNavigation();
-  setupMessages();
-  setupRevealAnimations();
+  showRandomPhrase(true);
 });
