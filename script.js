@@ -121,17 +121,14 @@ function renderParticipants(filter = "") {
 
   grid.innerHTML = visible.map(person => `
     <article class="wish-card">
-      <div class="avatar" style="--avatar-bg: ${escapeAttribute(person.color || "#e3f1e4")}" aria-hidden="true">${escapeHTML(person.emoji || "🎁")}</div>
       <div>
-        <div class="wish-meta">${escapeHTML(person.relation || "Integrante de la familia")}</div>
         <h3>${escapeHTML(person.name)}</h3>
-        <p>${escapeHTML(person.description || "")}</p>
-        <div class="wish-tags">${(person.wishes || []).map(wish => `<span class="wish-tag">${escapeHTML(wish)}</span>`).join("")}</div>
-        ${person.avoid ? `<p style="margin-top:10px;font-size:.8rem"><strong>Mejor evitar:</strong> ${escapeHTML(person.avoid)}</p>` : ""}
+        <ul>
+          ${(person.wishes || []).map(wish => `<li>${escapeHTML(wish)}</li>`).join("")}
+        </ul>
       </div>
     </article>
   `).join("");
-}
 
 // Evita que textos introducidos en los datos se interpreten como HTML.
 function escapeHTML(value) {
