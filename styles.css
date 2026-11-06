@@ -130,3 +130,15 @@ h1 span { color: var(--coral); }
   .message-section { padding: 65px 0; }.message-section::before { left: -25px; font-size: 6rem; }.message-section::after { right: -25px; font-size: 6rem; }
   .site-footer { flex-direction: column; text-align: center; gap: 8px; }
 }
+
+.wish-card ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.wish-card li {
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+}
+
+
