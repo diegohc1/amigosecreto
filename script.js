@@ -17,7 +17,7 @@ const PARTICIPANTS = [
     ru: ["Вариант 1", "Вариант 2", "Вариант 3"]
   }},
   { name: "Guisell", wishes: {
-    es: ["Opción 1", "Opción 2", "Opción 3"],
+    es: ["Opción 1", "Opción 2", "Opción 3", "Opción 4"],
     en:  ["Option 1", "Option 2", "Option 3"],
     ru: ["Вариант 1", "Вариант 2", "Вариант 3"]
   }},
