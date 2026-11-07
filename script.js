@@ -18,7 +18,7 @@ const PARTICIPANTS = [
   }},
   { name: "Guisell", wishes: {
     es: ["Una gift card de Victoria Secret", "Una crema de cara coreana", "Cepillo eléctrico para pelo", "Una polera de color oscuro", "Tallas de cuerpo color oscuro"],
-    en:  ["A Victoria's Secret gift card","A Korean face cream", "An electric hairbrush", "A dark-colored sweatshirt", "Dark-colored bath towels"],
+    en: ["A Victoria's Secret gift card","A Korean face cream", "An electric hairbrush", "A dark-colored sweatshirt", "Dark-colored bath towels"],
     ru: [ "Подарочная карта Victoria's Secret", "Корейский крем для лица", "Электрическая щётка для волос", "Толстовка тёмного цвета","Банные полотенца тёмного цвета"]
   }},
   { name: "Andres", wishes: {
