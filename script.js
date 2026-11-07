@@ -27,9 +27,24 @@ const PARTICIPANTS = [
     ru: ["Вариант 1", "Вариант 2", "Вариант 3"]
   }},
   { name: "Tamar", wishes: {
-    es: ["Opción 1", "Opción 2", "Opción 3"],
-    en: ["Option 1", "Option 2", "Option 3"],
-    ru: ["Вариант 1", "Вариант 2", "Вариант 3"]
+     es: [
+   {name: "Shower speaker",
+    link: "https://www.target.com/p/jlab-pop-party-portable-speaker/-/A-94730083?preselect=94633183#lnk=sametab"},
+   {name: "Collapsible reusable water bottle",
+    link: "https://www.target.com/p/unique-bargains-durable-water-bottle-collapsible-cup-500ml-hand-wash-silicone/-/A-1011615324?preselect=1011615321#lnk=sametab"}
+],
+     en: [
+   {name: "Shower speaker",
+    link: "https://www.target.com/p/jlab-pop-party-portable-speaker/-/A-94730083?preselect=94633183#lnk=sametab"},
+   {name: "Collapsible reusable water bottle",
+    link: "https://www.target.com/p/unique-bargains-durable-water-bottle-collapsible-cup-500ml-hand-wash-silicone/-/A-1011615324?preselect=1011615321#lnk=sametab"}
+],
+     ru: [
+   {name: "Shower speaker",
+    link: "https://www.target.com/p/jlab-pop-party-portable-speaker/-/A-94730083?preselect=94633183#lnk=sametab"},
+   {name: "Collapsible reusable water bottle",
+    link: "https://www.target.com/p/unique-bargains-durable-water-bottle-collapsible-cup-500ml-hand-wash-silicone/-/A-1011615324?preselect=1011615321#lnk=sametab"}
+]
   }},
   { name: "Julio", wishes: {
     es: ["Opción 1", "Opción 2", "Opción 3"],
@@ -238,10 +253,35 @@ function escapeHTML(value) {
 
 function renderParticipants() {
   const grid = document.getElementById("wishesGrid");
+
   grid.innerHTML = PARTICIPANTS.map(person => {
     const wishes = person.wishes[currentLanguage] || person.wishes.es;
-    const items = wishes.map(wish => `<li>${escapeHTML(wish)}</li>`).join("");
-    return `<article class="wish-card"><h3>${escapeHTML(person.name)}</h3><ul>${items}</ul></article>`;
+
+    const items = wishes.map(wish => {
+      // Si es un texto simple, lo muestra normalmente.
+      if (typeof wish === "string") {
+        return `<li>${escapeHTML(wish)}</li>`;
+      }
+
+      // Si es un objeto, muestra el nombre como enlace.
+      const name = escapeHTML(wish.name);
+      const link = escapeHTML(wish.link);
+
+      return `
+        <li>
+          <a href="${link}" target="_blank" rel="noopener noreferrer">
+            ${name} ↗
+          </a>
+        </li>
+      `;
+    }).join("");
+
+    return `
+      <article class="wish-card">
+        <h3>${escapeHTML(person.name)}</h3>
+        <ul>${items}</ul>
+      </article>
+    `;
   }).join("");
 }
 
