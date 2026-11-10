@@ -12,14 +12,14 @@ const EVENT_DATE = "2026-12-23T19:00:00";
    Para añadir a alguien, copia un bloque completo y cambia sus datos. */
 const PARTICIPANTS = [
   { name: "Francis", wishes: {
-    es: ["Opción 1", "Opción 2", "Opción 3"],
-    en: ["Option 1", "Option 2", "Option 3"],
-    ru: ["Вариант 1", "Вариант 2", "Вариант 3"]
+    es: ["Velas", "Galletas orgánicas para mí y Honey", "Paños de cocina"],
+    en: ["Candles", "Organic cookies for me and Honey", "Kitchen towels"],
+    ru: ["Свечи", "Органическое печенье для меня и Хани", "Кухонные полотенца"]
   }},
   { name: "Guisell", wishes: {
-    es: ["Una gift card de Victoria Secret", "Una crema de cara coreana", "Cepillo eléctrico para pelo", "Una polera de color oscuro", "Tallas de cuerpo color oscuro"],
-    en: ["A Victoria's Secret gift card","A Korean face cream", "An electric hairbrush", "A dark-colored sweatshirt", "Dark-colored bath towels"],
-    ru: [ "Подарочная карта Victoria's Secret", "Корейский крем для лица", "Электрическая щётка для волос", "Толстовка тёмного цвета","Банные полотенца тёмного цвета"]
+    es: ["Una crema de cara coreana", "Cepillo eléctrico para pelo", "Una polera de color oscuro", "Toallas de cuerpo color oscuro"],
+    en: ["A Korean face cream", "An electric hairbrush", "A dark-colored sweatshirt", "Dark-colored bath towels"],
+    ru: ["Корейский крем для лица", "Электрическая щётка для волос", "Толстовка тёмного цвета","Банные полотенца тёмного цвета"]
   }},
   { name: "Andres", wishes: {
     es: ["Opción 1", "Opción 2", "Opción 3"],
