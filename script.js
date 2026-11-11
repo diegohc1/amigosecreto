@@ -27,23 +27,23 @@ const PARTICIPANTS = [
     ru: ["Вариант 1", "Вариант 2", "Вариант 3"]
   }},
   { name: "Tamar", wishes: {
-     es: [
-   {name: "Shower speaker",
-    link: "https://www.target.com/p/jlab-pop-party-portable-speaker/-/A-94730083?preselect=94633183#lnk=sametab"},
-   {name: "Collapsible reusable water bottle",
-    link: "https://www.target.com/p/unique-bargains-durable-water-bottle-collapsible-cup-500ml-hand-wash-silicone/-/A-1011615324?preselect=1011615321#lnk=sametab"}
+        es: [
+      {name: "Shower speaker",
+      link: "https://www.target.com/p/jlab-pop-party-portable-speaker/-/A-94730083?preselect=94633183#lnk=sametab"},
+      {name: "Collapsible reusable water bottle",
+      link: "https://www.target.com/p/unique-bargains-durable-water-bottle-collapsible-cup-500ml-hand-wash-silicone/-/A-1011615324?preselect=1011615321#lnk=sametab"}
 ],
-     en: [
-   {name: "Shower speaker",
-    link: "https://www.target.com/p/jlab-pop-party-portable-speaker/-/A-94730083?preselect=94633183#lnk=sametab"},
-   {name: "Collapsible reusable water bottle",
-    link: "https://www.target.com/p/unique-bargains-durable-water-bottle-collapsible-cup-500ml-hand-wash-silicone/-/A-1011615324?preselect=1011615321#lnk=sametab"}
+       en: [
+     {name: "Shower speaker",
+      link: "https://www.target.com/p/jlab-pop-party-portable-speaker/-/A-94730083?preselect=94633183#lnk=sametab"},
+     {name: "Collapsible reusable water bottle",
+      link: "https://www.target.com/p/unique-bargains-durable-water-bottle-collapsible-cup-500ml-hand-wash-silicone/-/A-1011615324?preselect=1011615321#lnk=sametab"}
 ],
-     ru: [
-   {name: "Shower speaker",
-    link: "https://www.target.com/p/jlab-pop-party-portable-speaker/-/A-94730083?preselect=94633183#lnk=sametab"},
-   {name: "Collapsible reusable water bottle",
-    link: "https://www.target.com/p/unique-bargains-durable-water-bottle-collapsible-cup-500ml-hand-wash-silicone/-/A-1011615324?preselect=1011615321#lnk=sametab"}
+       ru: [
+     {name: "Shower speaker",
+      link: "https://www.target.com/p/jlab-pop-party-portable-speaker/-/A-94730083?preselect=94633183#lnk=sametab"},
+     {name: "Collapsible reusable water bottle",
+      link: "https://www.target.com/p/unique-bargains-durable-water-bottle-collapsible-cup-500ml-hand-wash-silicone/-/A-1011615324?preselect=1011615321#lnk=sametab"}
 ]
   }},
   { name: "Julio", wishes: {
@@ -57,9 +57,33 @@ const PARTICIPANTS = [
     ru:["Вариант 1", "Вариант 2", "Вариант 3"]
   }},
   { name: "Diego", wishes: {
-    es: ["Opción 1", "Opción 2", "Opción 3"],
-    en:  ["Option 1", "Option 2", "Option 3"],
-    ru: ["Вариант 1", "Вариант 2", "Вариант 3"]
+       es: [
+      {name: "Una correa de tela (esas que están como trenzadas?). Cualquier color, preferible un tono oscuro, pero si tiene un pequeño detalle colorido no hay problema [Adjunto imagen referencial]",
+      link: "https://www.google.com/search?sca_esv=f2ff985aa87c8f33&sxsrf=AKL5yDjs8R0WbL0sZBtpCUDGTemSRTtS-w:1794364271106&udm=2&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kmz5nQD8r6vpNTxxgXdSN3OY-5gFAD8YaPrqpIeIMdWZlyfws6TiOU-ej0B-jHf0Kim2Aa9gPl2MiNPq8WVQ0dS7TK_dkPu4nIfoG7XBwWlvIXzUSw0CpSsWJg2D9tPgreZJQHhVd953VWfrBK9DDlwf4h3M&q=correas+trenzadas+hombre&sa=X&ved=2ahUKEwib8efn7_6XAxXkppUCHWRSM4sQtKgLegQIGhAB&biw=1536&bih=695&dpr=1.25"},
+      {name: "Algún libro de filosofía de la felicidad",
+      link: ""},
+      {name: "Algún accesorio para bicicletas, por ejemplo, luces",
+      link: ""}
+
+],
+       en: [
+     {name: "A fabric belt (the kind with a braided or woven design). Any color is fine, preferably a dark shade, but a small colorful detail is perfectly okay. [Reference image attached]",
+      link: "https://www.google.com/search?sca_esv=f2ff985aa87c8f33&sxsrf=AKL5yDjs8R0WbL0sZBtpCUDGTemSRTtS-w:1794364271106&udm=2&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kmz5nQD8r6vpNTxxgXdSN3OY-5gFAD8YaPrqpIeIMdWZlyfws6TiOU-ej0B-jHf0Kim2Aa9gPl2MiNPq8WVQ0dS7TK_dkPu4nIfoG7XBwWlvIXzUSw0CpSsWJg2D9tPgreZJQHhVd953VWfrBK9DDlwf4h3M&q=correas+trenzadas+hombre&sa=X&ved=2ahUKEwib8efn7_6XAxXkppUCHWRSM4sQtKgLegQIGhAB&biw=1536&bih=695&dpr=1.25"},
+     {name: "A book about the philosophy of happiness",
+      link: ""},
+      {name: "Some bicycle accessory, for example, lights",
+      link: ""}
+
+],
+       ru: [
+     {name: "Тканевый ремень (из тех, что имеют плетёную структуру). Подойдёт любой цвет, желательно тёмный, но небольшой яркий элемент тоже не проблема. [Прилагается изображение для примера]",
+      link: "https://www.google.com/search?sca_esv=f2ff985aa87c8f33&sxsrf=AKL5yDjs8R0WbL0sZBtpCUDGTemSRTtS-w:1794364271106&udm=2&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kmz5nQD8r6vpNTxxgXdSN3OY-5gFAD8YaPrqpIeIMdWZlyfws6TiOU-ej0B-jHf0Kim2Aa9gPl2MiNPq8WVQ0dS7TK_dkPu4nIfoG7XBwWlvIXzUSw0CpSsWJg2D9tPgreZJQHhVd953VWfrBK9DDlwf4h3M&q=correas+trenzadas+hombre&sa=X&ved=2ahUKEwib8efn7_6XAxXkppUCHWRSM4sQtKgLegQIGhAB&biw=1536&bih=695&dpr=1.25"},
+     {name: "Некоторые велосипедные аксессуары, например, фонари",
+      link: ""},
+     {name: "Книга по философии счастья",
+      link: ""}
+
+]
   }},
   { name: "Sebas", wishes: {
     es: ["Opción 1", "Opción 2", "Opción 3"],
