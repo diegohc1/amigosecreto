@@ -60,27 +60,27 @@ const PARTICIPANTS = [
        es: [
       {name: "Una correa de tela (esas que están como trenzadas?). Cualquier color, preferible un tono oscuro, pero si tiene un pequeño detalle colorido no hay problema [Adjunto imagen referencial]",
       link: "https://www.google.com/search?sca_esv=f2ff985aa87c8f33&sxsrf=AKL5yDjs8R0WbL0sZBtpCUDGTemSRTtS-w:1794364271106&udm=2&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kmz5nQD8r6vpNTxxgXdSN3OY-5gFAD8YaPrqpIeIMdWZlyfws6TiOU-ej0B-jHf0Kim2Aa9gPl2MiNPq8WVQ0dS7TK_dkPu4nIfoG7XBwWlvIXzUSw0CpSsWJg2D9tPgreZJQHhVd953VWfrBK9DDlwf4h3M&q=correas+trenzadas+hombre&sa=X&ved=2ahUKEwib8efn7_6XAxXkppUCHWRSM4sQtKgLegQIGhAB&biw=1536&bih=695&dpr=1.25"},
-      {name: "Algún libro de filosofía de la felicidad",
+      {name: "Algún libro que discuta temas sobre la filosofía de la felicidad o similares (que sea más filosófico que feliz)",
       link: ""},
-      {name: "Algún accesorio para bicicletas, por ejemplo, luces",
+      {name: "Algún accesorio para bicicletas (por ejemplo, luces, guantes, portacelulares)",
       link: ""}
 
 ],
        en: [
      {name: "A fabric belt (the kind with a braided or woven design). Any color is fine, preferably a dark shade, but a small colorful detail is perfectly okay. [Reference image attached]",
       link: "https://www.google.com/search?sca_esv=f2ff985aa87c8f33&sxsrf=AKL5yDjs8R0WbL0sZBtpCUDGTemSRTtS-w:1794364271106&udm=2&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kmz5nQD8r6vpNTxxgXdSN3OY-5gFAD8YaPrqpIeIMdWZlyfws6TiOU-ej0B-jHf0Kim2Aa9gPl2MiNPq8WVQ0dS7TK_dkPu4nIfoG7XBwWlvIXzUSw0CpSsWJg2D9tPgreZJQHhVd953VWfrBK9DDlwf4h3M&q=correas+trenzadas+hombre&sa=X&ved=2ahUKEwib8efn7_6XAxXkppUCHWRSM4sQtKgLegQIGhAB&biw=1536&bih=695&dpr=1.25"},
-     {name: "A book about the philosophy of happiness",
+     {name: "A book that explores the philosophy of happiness or similar topics (one that is more philosophical than <happy>)",
       link: ""},
-      {name: "Some bicycle accessory, for example, lights",
+      {name: "Some bicycle accessories (for example, lights, gloves, phone holders)",
       link: ""}
 
 ],
        ru: [
      {name: "Тканевый ремень (из тех, что имеют плетёную структуру). Подойдёт любой цвет, желательно тёмный, но небольшой яркий элемент тоже не проблема. [Прилагается изображение для примера]",
       link: "https://www.google.com/search?sca_esv=f2ff985aa87c8f33&sxsrf=AKL5yDjs8R0WbL0sZBtpCUDGTemSRTtS-w:1794364271106&udm=2&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kmz5nQD8r6vpNTxxgXdSN3OY-5gFAD8YaPrqpIeIMdWZlyfws6TiOU-ej0B-jHf0Kim2Aa9gPl2MiNPq8WVQ0dS7TK_dkPu4nIfoG7XBwWlvIXzUSw0CpSsWJg2D9tPgreZJQHhVd953VWfrBK9DDlwf4h3M&q=correas+trenzadas+hombre&sa=X&ved=2ahUKEwib8efn7_6XAxXkppUCHWRSM4sQtKgLegQIGhAB&biw=1536&bih=695&dpr=1.25"},
-     {name: "Некоторые велосипедные аксессуары, например, фонари",
+     {name: "Любая книга, в которой обсуждаются вопросы философии счастья или подобные им (которая носит скорее философский, чем связанный со счастьем характер).",
       link: ""},
-     {name: "Книга по философии счастья",
+     {name: "Любые велосипедные аксессуары (например, фонари, перчатки, держатели для мобильных телефонов)",
       link: ""}
 
 ]
