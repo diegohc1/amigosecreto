@@ -86,9 +86,9 @@ const PARTICIPANTS = [
 ]
   }},
   { name: "Sebas", wishes: {
-    es: ["Opción 1", "Opción 2", "Opción 3"],
-    en: ["Option 1", "Option 2", "Option 3"],
-    ru:["Вариант 1", "Вариант 2", "Вариант 3"]
+    es: ["Sandalias Adidas, talla 43", "Bloqueador de Cara para piel seca (por ejemplo, ISDIN O EUCERIN)", "Medias exclusivas para jugar Tenis (creo que soy talla XL)"],
+    en: ["Adidas sandals, size 43 (EU)", "Facial sunscreen for dry skin (e.g., ISDIN or Eucerin)", "Socks specifically designed for playing tennis (I think my size is XL)"],
+    ru: ["Сандалии Adidas, размер 43 (EU)", "Солнцезащитный крем для лица для сухой кожи (например, ISDIN или Eucerin)", "Носки специально для игры в теннис (кажется, мой размер XL)"]
   }}
 ];
 
