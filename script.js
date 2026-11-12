@@ -28,9 +28,9 @@ const PARTICIPANTS = [
   }},
   { name: "Tamar", wishes: {
         es: [
-      {name: "Shower speaker",
+      {name: "Parlante para la ducha",
       link: "https://www.target.com/p/jlab-pop-party-portable-speaker/-/A-94730083?preselect=94633183#lnk=sametab"},
-      {name: "Collapsible reusable water bottle",
+      {name: "Botella de agua reutilizable y plegable",
       link: "https://www.target.com/p/unique-bargains-durable-water-bottle-collapsible-cup-500ml-hand-wash-silicone/-/A-1011615324?preselect=1011615321#lnk=sametab"}
 ],
        en: [
@@ -40,9 +40,9 @@ const PARTICIPANTS = [
       link: "https://www.target.com/p/unique-bargains-durable-water-bottle-collapsible-cup-500ml-hand-wash-silicone/-/A-1011615324?preselect=1011615321#lnk=sametab"}
 ],
        ru: [
-     {name: "Shower speaker",
+     {name: "Портативная колонка для душа",
       link: "https://www.target.com/p/jlab-pop-party-portable-speaker/-/A-94730083?preselect=94633183#lnk=sametab"},
-     {name: "Collapsible reusable water bottle",
+     {name: "Многоразовая складная бутылка для воды",
       link: "https://www.target.com/p/unique-bargains-durable-water-bottle-collapsible-cup-500ml-hand-wash-silicone/-/A-1011615324?preselect=1011615321#lnk=sametab"}
 ]
   }},
@@ -52,9 +52,9 @@ const PARTICIPANTS = [
     ru: ["Вариант 1", "Вариант 2", "Вариант 3"]
   }},
   { name: "Lisset", wishes: {
-    es: ["Opción 1", "Opción 2", "Opción 3"],
-    en:  ["Option 1", "Option 2", "Option 3"],
-    ru:["Вариант 1", "Вариант 2", "Вариант 3"]
+    es: ["Una taza bonita de Starbucks jaja", "Plumones de pintura acrílica", "Bloc para pintura al óleo"],
+    en:  ["Cute Starbucks mug LoL", "Acrylic paint markers", "Oil painting pad"],
+    ru:["Красивая кружка Starbucks, ахаха", "Маркеры с акриловой краской", "Блокнот для масляной живописи"]
   }},
   { name: "Diego", wishes: {
        es: [
