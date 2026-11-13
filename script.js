@@ -22,9 +22,9 @@ const PARTICIPANTS = [
     ru: ["Корейский крем для лица", "Электрическая щётка для волос", "Толстовка тёмного цвета","Банные полотенца тёмного цвета"]
   }},
   { name: "Andres", wishes: {
-    es: ["Opción 1", "Opción 2", "Opción 3"],
-    en: ["Option 1", "Option 2", "Option 3"],
-    ru: ["Вариант 1", "Вариант 2", "Вариант 3"]
+    es: ["De la selección Peruana. Adidas Stadium Soccer Team Shoe Bag. Ventilated Storage, Durable Build, Secure Zip Closure, Compact, Gym & Game-Day Ready", "Medias largas para uso diario"],
+    en: ["De la selección Peruana. Adidas Stadium Soccer Team Shoe Bag. Ventilated Storage, Durable Build, Secure Zip Closure, Compact, Gym & Game-Day Ready", "Long socks for everyday use"],
+    ru: ["De la selección Peruana. Adidas Stadium Soccer Team Shoe Bag. Ventilated Storage, Durable Build, Secure Zip Closure, Compact, Gym & Game-Day Ready", "Длинные чулки для повседневного использования"]
   }},
   { name: "Tamar", wishes: {
         es: [
