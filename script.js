@@ -47,9 +47,9 @@ const PARTICIPANTS = [
 ]
   }},
   { name: "Julio", wishes: {
-    es: ["Opción 1", "Opción 2", "Opción 3"],
-    en:  ["Option 1", "Option 2", "Option 3"],
-    ru: ["Вариант 1", "Вариант 2", "Вариант 3"]
+    es: ["Pisco", "Equipamiento de Perú", "The Silent Jihad, Calvin Robinson"],
+    en:  ["Pisco", "Peru Gear", "The Silent Jihad, Calvin Robinson"],
+    ru: ["Pisco", "снаряжение для Перу", "The Silent Jihad, Calvin Robinson"]
   }},
   { name: "Lisset", wishes: {
     es: ["Una taza bonita de Starbucks jaja", "Plumones de pintura acrílica", "Bloc para pintura al óleo"],
